@@ -1,0 +1,280 @@
+{
+ "tasks": {
+  "0": {
+   "id": 0,
+   "created_at": "2026-11-07T22:29:09.975630231-05:00",
+   "original_command": "echo hi; sleep 1",
+   "command": "echo hi; sleep 1",
+   "path": "/tmp",
+   "envs": {
+    "HOME": "/home/me",
+    "SECRET_TOKEN": "do-not-show"
+   },
+   "group": "default",
+   "dependencies": [],
+   "priority": 0,
+   "label": "my label",
+   "status": {
+    "Done": {
+     "enqueued_at": "2026-11-07T22:29:09.975547751-05:00",
+     "start": "2026-11-07T22:29:10.172922499-05:00",
+     "end": "2026-11-07T22:29:11.387557396-05:00",
+     "result": "Success"
+    }
+   }
+  },
+  "1": {
+   "id": 1,
+   "created_at": "2026-11-07T22:29:10.115774311-05:00",
+   "original_command": "sleep 300",
+   "command": "sleep 300",
+   "path": "/home2/btang5/software/pueue_visualization",
+   "envs": {
+    "HOME": "/home/me",
+    "SECRET_TOKEN": "do-not-show"
+   },
+   "group": "gpu",
+   "dependencies": [],
+   "priority": 0,
+   "label": null,
+   "status": {
+    "Done": {
+     "enqueued_at": "2026-11-07T22:29:10.115668137-05:00",
+     "start": "2026-11-07T22:29:10.175486326-05:00",
+     "end": "2026-11-07T22:29:14.708867388-05:00",
+     "result": "Killed"
+    }
+   }
+  },
+  "2": {
+   "id": 2,
+   "created_at": "2026-11-07T22:29:10.255660086-05:00",
+   "original_command": "exit 3",
+   "command": "exit 3",
+   "path": "/home2/btang5/software/pueue_visualization",
+   "envs": {
+    "HOME": "/home/me",
+    "SECRET_TOKEN": "do-not-show"
+   },
+   "group": "gpu",
+   "dependencies": [],
+   "priority": 0,
+   "label": null,
+   "status": {
+    "Done": {
+     "enqueued_at": "2026-11-07T22:29:10.255656989-05:00",
+     "start": "2026-11-07T22:29:10.479247150-05:00",
+     "end": "2026-11-07T22:29:10.780967109-05:00",
+     "result": {
+      "Failed": 3
+     }
+    }
+   }
+  },
+  "3": {
+   "id": 3,
+   "created_at": "2026-11-07T22:29:10.395700365-05:00",
+   "original_command": "sleep 400",
+   "command": "sleep 400",
+   "path": "/home2/btang5/software/pueue_visualization",
+   "envs": {
+    "HOME": "/home/me",
+    "SECRET_TOKEN": "do-not-show"
+   },
+   "group": "default",
+   "dependencies": [],
+   "priority": 0,
+   "label": null,
+   "status": {
+    "Paused": {
+     "enqueued_at": "2026-11-07T22:29:10.395696252-05:00",
+     "start": "2026-11-07T22:29:11.390773472-05:00"
+    }
+   }
+  },
+  "4": {
+   "id": 4,
+   "created_at": "2026-11-07T22:29:10.535656004-05:00",
+   "original_command": "sleep 400",
+   "command": "sleep 400",
+   "path": "/home2/btang5/software/pueue_visualization",
+   "envs": {
+    "HOME": "/home/me",
+    "SECRET_TOKEN": "do-not-show"
+   },
+   "group": "default",
+   "dependencies": [],
+   "priority": 0,
+   "label": null,
+   "status": {
+    "Queued": {
+     "enqueued_at": "2026-11-07T22:29:10.535653178-05:00"
+    }
+   }
+  },
+  "5": {
+   "id": 5,
+   "created_at": "2026-11-07T22:29:10.675559423-05:00",
+   "original_command": "echo stashed",
+   "command": "echo stashed",
+   "path": "/home2/btang5/software/pueue_visualization",
+   "envs": {
+    "HOME": "/home/me",
+    "SECRET_TOKEN": "do-not-show"
+   },
+   "group": "default",
+   "dependencies": [],
+   "priority": 0,
+   "label": null,
+   "status": {
+    "Stashed": {
+     "enqueue_at": null
+    }
+   }
+  },
+  "6": {
+   "id": 6,
+   "created_at": "2026-11-07T22:29:10.811529872-05:00",
+   "original_command": "echo dep",
+   "command": "echo dep",
+   "path": "/home2/btang5/software/pueue_visualization",
+   "envs": {
+    "HOME": "/home/me",
+    "SECRET_TOKEN": "do-not-show"
+   },
+   "group": "default",
+   "dependencies": [
+    0
+   ],
+   "priority": 0,
+   "label": null,
+   "status": {
+    "Queued": {
+     "enqueued_at": "2026-11-07T22:29:10.811527911-05:00"
+    }
+   }
+  },
+  "7": {
+   "id": 7,
+   "created_at": "2026-11-07T22:29:10.947556425-05:00",
+   "original_command": "nonexistentcmd_xyz",
+   "command": "nonexistentcmd_xyz",
+   "path": "/home2/btang5/software/pueue_visualization",
+   "envs": {
+    "HOME": "/home/me",
+    "SECRET_TOKEN": "do-not-show"
+   },
+   "group": "gpu",
+   "dependencies": [],
+   "priority": 0,
+   "label": null,
+   "status": {
+    "Done": {
+     "enqueued_at": "2026-11-07T22:29:10.947554815-05:00",
+     "start": "2026-11-07T22:29:11.085889101-05:00",
+     "end": "2026-11-07T22:29:11.387650773-05:00",
+     "result": {
+      "Failed": 127
+     }
+    }
+   }
+  },
+  "8": {
+   "id": 8,
+   "created_at": "2026-11-07T22:29:11.087666514-05:00",
+   "original_command": "sleep 500",
+   "command": "sleep 500",
+   "path": "/home2/btang5/software/pueue_visualization",
+   "envs": {
+    "HOME": "/home/me",
+    "SECRET_TOKEN": "do-not-show"
+   },
+   "group": "gpu",
+   "dependencies": [],
+   "priority": 0,
+   "label": null,
+   "status": {
+    "Stashed": {
+     "enqueue_at": "2026-11-08T00:29:10.996867744-05:00"
+    }
+   }
+  },
+  "9": {
+   "id": 9,
+   "created_at": "2026-11-07T22:29:11.231682555-05:00",
+   "original_command": "echo depfail",
+   "command": "echo depfail",
+   "path": "/home2/btang5/software/pueue_visualization",
+   "envs": {
+    "HOME": "/home/me",
+    "SECRET_TOKEN": "do-not-show"
+   },
+   "group": "default",
+   "dependencies": [
+    2
+   ],
+   "priority": 0,
+   "label": null,
+   "status": {
+    "Done": {
+     "enqueued_at": "2026-11-07T22:29:11.231654425-05:00",
+     "start": "2026-11-07T22:29:11.388164757-05:00",
+     "end": "2026-11-07T22:29:11.388165120-05:00",
+     "result": "DependencyFailed"
+    }
+   }
+  },
+  "10": {
+   "id": 10,
+   "created_at": "2026-11-07T22:29:11.371664097-05:00",
+   "original_command": "sleep 300",
+   "command": "sleep 300",
+   "path": "/home2/btang5/software/pueue_visualization",
+   "envs": {
+    "HOME": "/home/me",
+    "SECRET_TOKEN": "do-not-show"
+   },
+   "group": "gpu",
+   "dependencies": [],
+   "priority": 0,
+   "label": null,
+   "status": {
+    "Running": {
+     "enqueued_at": "2026-11-07T22:29:11.371660641-05:00",
+     "start": "2026-11-07T22:29:11.393776778-05:00"
+    }
+   }
+  },
+  "11": {
+   "id": 11,
+   "created_at": "2026-11-07T22:29:11.511662526-05:00",
+   "original_command": "sleep 300",
+   "command": "sleep 300",
+   "path": "/home2/btang5/software/pueue_visualization",
+   "envs": {
+    "HOME": "/home/me",
+    "SECRET_TOKEN": "do-not-show"
+   },
+   "group": "gpu",
+   "dependencies": [],
+   "priority": 0,
+   "label": null,
+   "status": {
+    "Running": {
+     "enqueued_at": "2026-11-07T22:29:11.511659356-05:00",
+     "start": "2026-11-07T22:29:14.711870121-05:00"
+    }
+   }
+  }
+ },
+ "groups": {
+  "default": {
+   "status": "Running",
+   "parallel_tasks": 1
+  },
+  "gpu": {
+   "status": "Running",
+   "parallel_tasks": 2
+  }
+ }
+}
