@@ -4,4 +4,7 @@
 #   ./run.sh --check
 set -euo pipefail
 cd "$(dirname "$0")"
-exec python3 -m pueue_viz "$@"
+
+: "${PUEUE_PORT:=6924}"
+
+exec python3 -m pueue_viz --port $PUEUE_PORT "$@"
